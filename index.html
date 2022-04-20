@@ -13,6 +13,14 @@
             body {
                 max-width: 1040px;
             }
+
+            h2 {
+                font-size: 3em;
+            }
+
+            footer .text {
+                font-size: 3em;
+            }
         }
 
         @media (min-width: 835px) and (max-width: 1280px) {
@@ -23,6 +31,14 @@
             body {
                 max-width: 80%;
             }
+
+            h2 {
+                font-size: 2.75em;
+            }
+
+            footer .text {
+                font-size: 2.75em;
+            }
         }
 
         @media (max-width: 834px) {
@@ -32,6 +48,14 @@
 
             body {
                 max-width: 80%;
+            }
+
+            h2 {
+                font-size: 1.75em;
+            }
+
+            footer .text {
+                font-size: 1.75em;
             }
         }
 
@@ -66,10 +90,6 @@
             text-decoration: none;
             color: #0088CC;
             transition: color .3s;
-        }
-
-        h2 {
-            font-size: 3em;
         }
 
         .text {
@@ -125,11 +145,25 @@
             width: 1.1em;
             height: 1.1em;
         }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
 <header>
-    <a class="bordered link-with-icon text" href="https://ton.org/mining" target="_blank" rel="noopener noreferrer">How to start mining TON
+    <a class="bordered link-with-icon text" href="https://ton.org/mining" target="_blank" rel="noopener noreferrer">How
+        to start mining TON
         <svg aria-hidden="true" class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
              xmlns="http://www.w3.org/2000/svg">
             <path d="M19.247 4.583a.824.824 0 1 1 1.165 1.165l-7.416 7.416a.824.824 0 0 1-1.165-1.166l7.416-7.415z"
@@ -190,6 +224,7 @@
 <footer>
     <div class="text">
         <a href="https://ton.org">
+            <span class="visually-hidden">TON.org</span>
             <svg aria-hidden="true" class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
@@ -200,6 +235,7 @@
             </svg>
         </a>
         <a href="https://github.com/ton-blockchain/mining-status" class="gh-link">
+            <span class="visually-hidden">GitHub Repository</span>
             <svg aria-hidden="true" class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.001 0C5.371-.003 0 5.511 0 12.317c0 5.381 3.36 9.956 8.038 11.636.63.163.534-.297.534-.611v-2.135c-3.638.438-3.786-2.035-4.03-2.448-.493-.865-1.66-1.085-1.311-1.498.828-.438 1.673.11 2.652 1.594.708 1.077 2.088.895 2.788.716.153-.647.48-1.225.93-1.674-3.77-.694-5.34-3.057-5.34-5.867 0-1.363.437-2.616 1.295-3.627-.547-1.666.05-3.093.131-3.305 1.558-.143 3.177 1.146 3.303 1.248.885-.245 1.896-.375 3.027-.375 1.137 0 2.15.135 3.044.383.303-.237 1.804-1.344 3.252-1.21.078.213.662 1.607.148 3.25.868 1.014 1.31 2.278 1.31 3.645 0 2.814-1.581 5.18-5.362 5.863.324.327.581.717.756 1.148.176.43.266.892.266 1.358v3.099c.021.248 0 .493.402.493C20.58 22.356 24 17.748 24 12.32 24 5.51 18.627 0 12.001 0z"
